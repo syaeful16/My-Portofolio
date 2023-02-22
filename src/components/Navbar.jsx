@@ -16,7 +16,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='px-[2rem] lg:px-[6rem] xl:px-[12rem] w-screen py-6 flex justify-between'>
+    <nav className='px-6 lg:px-[6rem] xl:px-[12rem] w-screen py-6 flex justify-between'>
       <h1 className='text-white font-montserrat font-bold text-xl md:text-2xl'>ARNAS.</h1>
       <ul className='hidden font-poppins font-medium text-white md:flex'>
         {navMenu.map((menu, index) => (
