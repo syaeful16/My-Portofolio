@@ -6,7 +6,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 const Cover = () => {
   return (
     <div className="px-[2rem] lg:px-[6rem] xl:px-[12rem] h-[90vh] w-screen">
-      <div className='sm:pt-10 lg:grid grid-cols-[45%_55%] w-full h-full'>
+      <div className='pt-8 md:pt-0 lg:grid grid-cols-[45%_55%] w-full h-full'>
         <div className="flex flex-col justify-center">
           <h2 className='text-[#A0A0A0] text-2xl lg:text-5xl font-poppins font-medium'>
             <Typed
