@@ -1,10 +1,13 @@
+import { Element } from "react-scroll";
 import Cover from "./components/Cover";
+import MyActivity from "./components/MyActivity";
+import MyProject from "./components/MyProject";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="relative">
+    <div className="relative scroll-smooth">
       <svg className="absolute top-0 right-0 w-[100%] md:w-[50%]" viewBox="0 0 1161 474" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M52.0604 0C19.4651 14.086 -1.93358 31.7945 0.9996 53.5C10.9996 127.5 107 299.5 207 275.5C259.961 262.789 330.031 219.506 390.918 181.895C444.997 148.49 491.832 119.559 513 120.5C558 122.5 728.5 162 742 208.5C747.151 226.243 744.076 250.246 740.886 275.149C735.716 315.511 730.243 358.236 759 380.5C803.748 415.144 907.302 426.173 956.481 431.41C958.406 431.615 960.248 431.812 962 432C975.824 433.486 988.588 440.143 1003.13 447.727C1035.9 464.818 1077.69 486.617 1161 464.551V0H52.0604Z" fill="url(#paint0_linear_340_30)"/>
         <defs>
@@ -28,6 +31,12 @@ function App() {
         <Navbar/>
         <Cover/>
         <Skills/>
+        <Element name='MyProject' smooth>
+          <MyProject/>
+        </Element>
+        <Element name='MyActivity' smooth>
+          <MyActivity/>
+        </Element>
       </div>
     </div>
   );

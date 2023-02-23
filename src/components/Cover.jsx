@@ -6,7 +6,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 const Cover = () => {
   return (
     <div className='w-screen h-[90vh] px-[2rem] lg:px-[4rem] xl:px-[6rem] 2xl:px-[12rem]'>
-      <div className="w-full h-full flex  xl:grid grid-cols-2">
+      <div className="w-full h-full flex xl:grid grid-cols-2">
         <div className='w-full flex flex-col justify-center font-poppins'>
           <h2 className='text-3xl md:text-4xl font-medium text-[#A0A0A0] '>
             <Typed
@@ -18,7 +18,7 @@ const Cover = () => {
           </h2>
           <h1 className='text-5xl md:text-6xl 2xl:text-7xl font-bold text-white mt-3'>Syaefulloh Arnas</h1>
           <div className="bg-[#FFD568] w-[50%] md:w-[30%] h-[4px] md:h-[6px] rounded-lg my-4 md:my-8 lg:my-10"></div>
-            <p className='w-[100%] sm:w-[90%] text-white leading-8 lg:leading-[2.5rem] text-sm md:text-[.9rem] lg:text-lg '>During my college days I participated in several internal activities as a designer such as designing ui/ux and filling in Instagram content using <span className='font-bold'>Figma</span> and <span className='font-bold'>Adobe XD</span>. Besides that, I have made website projects with 
+            <p className='w-[100%] sm:w-[85%] text-white leading-8 lg:leading-[2.5rem] text-sm md:text-[.9rem] lg:text-lg '>During my college days I participated in several internal activities as a designer such as designing ui/ux and filling in Instagram content using <span className='font-bold'>Figma</span> and <span className='font-bold'>Adobe XD</span>. Besides that, I have made website projects with 
               <span className='font-bold'> React js</span>, 
               <span className='font-bold'> Laravel</span>, 
               <span className='font-bold'> HTML</span>, 
