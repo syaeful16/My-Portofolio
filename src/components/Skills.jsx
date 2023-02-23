@@ -43,21 +43,21 @@ const Skills = () => {
         <div className='flex justify-between items-center'>
           {logoImage.map((image, index) => (
             <div>
-              {index <= 5 ? <img key={index} src={image.img} alt={image.name} className='p-6'/> : ''}
+              {index <= 4 ? <img key={index} src={image.img} alt={image.name} className='p-6'/> : ''}
             </div>
           ))}
         </div>
         <div className='flex justify-between items-center'>
           {logoImage.map((image, index) => (
             <div>
-              {index > 5 && index <= 10? <img key={index} src={image.img} alt={image.name} className='p-6'/> : ''}
+              {index > 4 && index <= 8? <img key={index} src={image.img} alt={image.name} className='p-6'/> : ''}
             </div>
           ))}
         </div>
         <div className='flex justify-between items-center'>
           {logoImage.map((image, index) => (
             <div>
-              {index > 10 && index < logoImage.length ? <img key={index} src={image.img} alt={image.name} className='p-6'/> : ''}
+              {index > 8 && index < logoImage.length ? <img key={index} src={image.img} alt={image.name} className='p-6'/> : ''}
             </div>
           ))}
         </div>
