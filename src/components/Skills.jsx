@@ -31,7 +31,7 @@ const logoImage = [
 
 const Skills = () => {
   return (
-    <div className='w-screen h-[50vh] flex flex-col justify-center items-center p-8 md:p-12 backdrop-blur-md bg-white/5'>
+    <div className='w-screen my-10 flex flex-col justify-center items-center p-8 md:p-12 backdrop-blur-md bg-white/5'>
       <div className="grid grid-cols-3 gap-4 md:hidden">
         {logoImage.map((image, index) => (
           <div key={index} className="">
@@ -42,22 +42,22 @@ const Skills = () => {
       <div className='hidden md:flex flex-col w-4/5 justify-center items-center'>
         <div className='flex justify-between items-center'>
           {logoImage.map((image, index) => (
-            <div>
-              {index <= 4 ? <img key={index} src={image.img} alt={image.name} className='p-6'/> : ''}
+            <div key={index}>
+              {index <= 4 ? <img src={image.img} alt={image.name} className='p-6'/> : ''}
             </div>
           ))}
         </div>
         <div className='flex justify-between items-center'>
           {logoImage.map((image, index) => (
-            <div>
-              {index > 4 && index <= 8? <img key={index} src={image.img} alt={image.name} className='p-6'/> : ''}
+            <div key={index}>
+              {index > 4 && index <= 8? <img src={image.img} alt={image.name} className='p-6'/> : ''}
             </div>
           ))}
         </div>
         <div className='flex justify-between items-center'>
           {logoImage.map((image, index) => (
-            <div>
-              {index > 8 && index < logoImage.length ? <img key={index} src={image.img} alt={image.name} className='p-6'/> : ''}
+            <div key={index}>
+              {index > 8 && index < logoImage.length ? <img src={image.img} alt={image.name} className='p-6'/> : ''}
             </div>
           ))}
         </div>

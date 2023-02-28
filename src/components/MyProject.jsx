@@ -19,7 +19,7 @@ const MyProject = () => {
         </div>
         <div className='flex flex-col justify-center gap-6'>
           {myProject.map((project, index) => (
-            <a key={index} href={project.link} className="w-[100%] lg:w-[80%] h-28 rounded-lg gap-4 md:gap-6 flex justify-between p-4 border bg-white/5 hover:translate-x-6 hover:border-[#FFD568] ease-in-out duration-300">
+            <a key={index} href={project.link} className="w-[100%] lg:w-[80%] h-28 rounded-lg gap-4 md:gap-6 flex justify-between p-4 border border-white/50 bg-white/5 hover:translate-x-6 hover:border-[#FFD568] ease-in-out duration-300">
               <img src={project.img} alt={project.name}/>
               <div className="flex flex-col font-poppins justify-center w-full">
                 <h1 className='text-white text-lg md:text-xl 2xl:text-2xl'>{project.title}</h1>
